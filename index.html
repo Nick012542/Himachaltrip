@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himachal Tour Itinerary</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Poppins', sans-serif; background:#111; color:#f5f5f5; }
+
+  /* Sticky Buttons */
+  .sticky-buttons { position:fixed; display:flex; flex-direction:column; gap:10px; z-index:1000; }
+  .sticky-left { bottom:20px; left:20px; }
+  .sticky-right { bottom:20px; right:20px; }
+  .btn { background:#4caf50; color:#fff; border:none; padding:12px 20px; font-size:16px; font-weight:600; border-radius:10px; cursor:pointer; box-shadow:0 5px 15px rgba(0,0,0,0.4); transition:0.3s; }
+  .btn:hover { background:#388e3c; transform:scale(1.05); }
+
+  /* Trip title and slogan */
+  .trip-title { text-align:center; padding:60px 20px 30px 20px; color:#ffd700; }
+  .trip-title h1 { font-size:3rem; font-weight:700; margin-bottom:10px; text-shadow: 2px 2px 10px rgba(0,0,0,0.7);}
+  .trip-title p { font-size:1.5rem; color:#4caf50; font-weight:600; }
+
+  /* Route Container */
+  .route-container { position:relative; width:90%; max-width:1300px; margin:0 auto 60px auto; height:220px; }
+  .route-container svg { width:100%; height:100%; overflow:visible; }
+  .route-container polyline { fill:none; stroke:#ffd700; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; filter: drop-shadow(0 0 10px #ffd700); }
+
+  .route-container .spot { position:absolute; color:#fff; font-weight:600; font-size:14px; text-shadow: 1px 1px 6px rgba(0,0,0,0.7); }
+
+  /* Day Section */
+  .day-section { display:flex; justify-content:center; align-items:flex-start; gap:25px; max-width:1100px; margin:0 auto 50px auto; padding:20px; background:rgba(0,0,0,0.55); border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.5); }
+  .day-section .text-box { flex:2; }
+  .day-section .text-box h1 { font-size:2rem; color:#ffd700; margin-bottom:12px; font-weight:700; }
+  .day-section .text-box p { font-size:1rem; line-height:1.6; margin-bottom:8px; color:#f5f5f5; }
+  .day-section .meals { font-weight:600; color:#4caf50; margin-top:10px; }
+  .day-section .card { flex:1; background:rgba(255,255,255,0.95); border-radius:15px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.4); color:#333; }
+  .day-section .card img { width:100%; height:220px; object-fit:cover; }
+  .day-section .card-content { padding:18px; }
+  .day-section .card-content h2 { font-size:1.3rem; color:#222; margin-bottom:8px; font-weight:600; }
+  .day-section .card-content p { font-size:0.95rem; color:#555; line-height:1.5; }
+
+  /* Inclusions/Exclusions */
+  .list-box { max-width:1000px; margin:0 auto 50px auto; background:rgba(255,255,255,0.95); padding:35px; border-radius:15px; box-shadow:0 8px 25px rgba(0,0,0,0.35); color:#333; }
+  .list-box h1 { color:#e91e63; margin-bottom:25px; text-align:center; font-size:2rem; }
+  .lists { display:grid; grid-template-columns:1fr 1fr; gap:35px; }
+  .lists h2 { color:#222; margin-bottom:12px; font-size:1.2rem; }
+  .lists ul { list-style:disc; margin-left:20px; line-height:1.7; font-size:1rem; }
+
+  @media(max-width:900px){ .day-section{ flex-direction:column; } .lists{ grid-template-columns:1fr; } }
+  @media(max-width:480px){ .trip-title h1{ font-size:2.2rem; } .trip-title p{ font-size:1.2rem; } .day-section .text-box h1{ font-size:1.5rem; } .day-section .text-box p{ font-size:0.9rem; } .btn{ font-size:14px; padding:10px 16px; } }
+</style>
+</head>
+<body>
+
+<!-- Sticky Buttons -->
+<div class="sticky-buttons sticky-left">
+  <button class="btn" onclick="window.open('YOUR_WHATSAPP_LINK_HERE','_blank')">Join WhatsApp Group</button>
+  <button class="btn" onclick="window.open('tel:+91YOUR_NUMBER','_blank')">Contact for Details</button>
+</div>
+<div class="sticky-buttons sticky-right">
+  <button class="btn" onclick="window.open('YOUR_REGISTER_LINK_HERE','_blank')">Register Now</button>
+  <button class="btn" onclick="window.open('9th Dec Himachal Tour_compressed.pdf','_blank')">Download Itinerary</button>
+</div>
+
+<!-- Trip Title -->
+<div class="trip-title">
+  <h1>Himachal Pradesh 2025 Trip</h1>
+  <p>|| आत्ता नाही तर कधीच नाही !! ||</p>
+</div>
+
+<!-- Route -->
+<div class="route-container">
+  <svg>
+    <polyline points="
+      50,110 90,80 150,120 200,70 260,140 320,90 380,150 450,80 520,130 600,60 680,140 750,90 820,150 900,80 980,130 1050,70 1120,140 1200,90
+    " />
+  </svg>
+  <!-- Spots placed randomly along wavy line -->
+  <div class="spot" style="top:105px; left:50px;">Mumbai</div>
+  <div class="spot" style="top:75px; left:90px;">Manali</div>
+  <div class="spot" style="top:125px; left:150px;">Solang Valley</div>
+  <div class="spot" style="top:65px; left:200px;">Atal Tunnel</div>
+  <div class="spot" style="top:145px; left:260px;">Kasol</div>
+  <div class="spot" style="top:85px; left:320px;">Manikaran</div>
+  <div class="spot" style="top:155px; left:380px;">Kullu</div>
+  <div class="spot" style="top:75px; left:450px;">Dharamshala</div>
+  <div class="spot" style="top:145px; left:520px;">McLeodganj</div>
+  <div class="spot" style="top:55px; left:600px;">Amritsar</div>
+  <div class="spot" style="top:135px; left:680px;">Wagah Border</div>
+  <div class="spot" style="top:95px; left:750px;">Golden Temple</div>
+  <div class="spot" style="top:120px; left:820px;">Jallianwala Bagh</div>
+  <div class="spot" style="top:70px; left:900px;">Delhi</div>
+</div>
+
+<!-- Day 1 Section -->
+<div class="day-section">
+  <div class="text-box">
+    <h1>DAY 1 – 9th Dec | Mumbai → Delhi</h1>
+    <p>Board the Garib Rath Express from Mumbai and start your North India adventure.<br>
+    Selfies, Antakshari, Uno, Insta Reels – Let the fun begin 🎥</p>
+    <p class="meals">Meals: Own Cost | Overnight Train Journey</p>
+  </div>
+  <div class="card">
+    <img src="mumbai.jpg" alt="Day 1 Poster">
+    <div class="card-content">
+      <h2>Mumbai → Delhi</h2>
+      <p>Train journey, fun & games onboard.</p>
+    </div>
+  </div>
+</div>
+
+<!-- You can continue Day 2 → Day 10 here -->
+
+</body>
+</html>
