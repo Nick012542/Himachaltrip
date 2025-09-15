@@ -1,10 +1,10 @@
-import { Calendar, Star, Mountain, Utensils, Home } from "lucide-react"
+import { Calendar, Star, Mountain, Utensils, Home, Download } from "lucide-react"
 
 export default function HimachalTour() {
   const itinerary = [
     {
       day: 1,
-      date: "10th Dec",
+      date: "9th Dec",
       title: "Mumbai to Delhi: Let's Goooo!",
       description:
         "Board the Garib Rath Express from Mumbai and start your North India adventure. Selfies, Antakshari, Uno, Insta Reels. Let the fun begin!",
@@ -13,7 +13,7 @@ export default function HimachalTour() {
     },
     {
       day: 2,
-      date: "11th Dec",
+      date: "10th Dec",
       title: "Delhi to Chandigarh to Manali: Chill Scene",
       description:
         "Reach Delhi → Road trip to Chandigarh. Lunch on own, local shopping, then overnight road trip to Manali",
@@ -22,7 +22,7 @@ export default function HimachalTour() {
     },
     {
       day: 3,
-      date: "12th Dec",
+      date: "11th Dec",
       title: "Arrive Manali: DJ Night Included",
       description: "Morning relax, scenic views, gentle walk, momos. Evening full DJ Night – music, dance aur dhamaka!",
       meals: "Dinner only",
@@ -30,7 +30,7 @@ export default function HimachalTour() {
     },
     {
       day: 4,
-      date: "13th Dec",
+      date: "12th Dec",
       title: "Solang Valley & Local Sightseeing",
       description:
         "Snow fun at Solang Valley & Atal Tunnel drive, Hidimba Temple visit, Mall Road shopping. Adventure aur vibe – dono chahiye!",
@@ -39,7 +39,7 @@ export default function HimachalTour() {
     },
     {
       day: 5,
-      date: "14th Dec",
+      date: "13th Dec",
       title: "Kullu to Kasol",
       description:
         "Drive to Kullu for river rafting & paragliding, explore local markets. Later, head to Kasol for a relaxing evening.",
@@ -48,7 +48,7 @@ export default function HimachalTour() {
     },
     {
       day: 6,
-      date: "15th Dec",
+      date: "14th Dec",
       title: "Explore Kasol & Travel to Dharamshala",
       description:
         "Kasol Market & Parvati River, visit Manikaran Sahib Gurudwara with Langar lunch. Evening: DJ Bash! One more DJ night?",
@@ -57,7 +57,7 @@ export default function HimachalTour() {
     },
     {
       day: 7,
-      date: "16th Dec",
+      date: "15th Dec",
       title: "McLeodganj Exploration and Drive to Amritsar",
       description:
         "Explore spiritual McLeodganj, peaceful Dalai Lama Temple, and Shiva Café. Later begin journey to Amritsar (5-8 hrs). Chill playlist, travel snacks, mid-road dance reels.",
@@ -66,7 +66,7 @@ export default function HimachalTour() {
     },
     {
       day: 8,
-      date: "17th Dec",
+      date: "16th Dec",
       title: "Amritsar Ghumo aur Journey to Delhi",
       description:
         "Golden Temple ki roshni mein spiritual connection, Langar ki unlimited love, aur Jallianwala Bagh ki history. Phir patriotic thrill at Wagah Border Ceremony",
@@ -75,7 +75,7 @@ export default function HimachalTour() {
     },
     {
       day: 9,
-      date: "18th Dec",
+      date: "17th Dec",
       title: "Delhi Se Mumbai Ki Journey",
       description:
         "Delhi ki thodi si masti, phir Mumbai ki taraf! Train journey mein dosti, yaadein, aur endless masti...",
@@ -84,7 +84,7 @@ export default function HimachalTour() {
     },
     {
       day: 10,
-      date: "19th Dec",
+      date: "18th Dec",
       title: "Mumbai Wapsi – Trip Khatam",
       description:
         "Mumbai wapas aake, dil bhar ke yaadein, aur next adventure ki planning shuru! Trip officially khatam... par memories forever rahengi.",
@@ -95,22 +95,35 @@ export default function HimachalTour() {
 
   return (
     <div className="min-h-screen">
+      <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[9999] flex flex-col gap-3">
+        {/* Book Now Button */}
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeU3eNYyVSdLGQ-Dp1jcmQzRDJdgkun8OaPLcxx7L29nGsqgw/viewform?usp=sharing&ouid=111157058529883492838"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl border border-amber-500 text-base md:text-lg backdrop-blur-sm"
+        >
+          <Calendar size={18} className="md:w-6 md:h-6" />
+          <span className="font-semibold">Book Now</span>
+        </a>
+
+        {/* Download Itinerary Button */}
+        <a
+          href="/himachal-itinerary.pdf"
+          download="Himachal-Pradesh-Itinerary.pdf"
+          className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl border border-blue-500 text-base md:text-lg backdrop-blur-sm"
+        >
+          <Download size={18} className="md:w-6 md:h-6" />
+          <span className="font-semibold">Download Itinerary</span>
+        </a>
+      </div>
+
       <div
         className="relative min-h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url(/background4.jpg)" }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10">
-          <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeU3eNYyVSdLGQ-Dp1jcmQzRDJdgkun8OaPLcxx7L29nGsqgw/viewform"
-              className="flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl border border-amber-500 text-sm md:text-base"
-            >
-              <Calendar size={16} className="md:w-5 md:h-5" />
-              <span className="font-semibold">Book Now</span>
-            </a>
-          </div>
-
           {/* Hero Section */}
           <div className="relative overflow-hidden">
             <div className="relative text-center py-12 md:py-20 px-4 md:px-6">
@@ -118,10 +131,10 @@ export default function HimachalTour() {
                 Himachal Pradesh
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white font-semibold mb-6 md:mb-8 drop-shadow-lg">
-                Ultimate Mountain Adventure
+                "आत्ता नाही तर कधीचं नाही"
               </p>
               <div className="text-base md:text-lg text-slate-200 max-w-2xl mx-auto mb-6 md:mb-8 px-4">
-                Experience the majestic beauty of the Himalayas on this premium 10-day journey
+                Experience the majestic beauty of the Himalayas on this 10-day journey
               </div>
             </div>
           </div>
@@ -150,6 +163,10 @@ export default function HimachalTour() {
                     </span>
                     <div className="w-4 md:w-8 border-t-2 border-dashed border-white"></div>
                     <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg whitespace-nowrap">
+                      Atal tunnel
+                    </span>
+                    <div className="w-4 md:w-8 border-t-2 border-dashed border-white"></div>
+                    <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg whitespace-nowrap">
                       Solang Valley
                     </span>
                     <div className="w-4 md:w-8 border-t-2 border-dashed border-white"></div>
@@ -159,6 +176,10 @@ export default function HimachalTour() {
                     <div className="w-4 md:w-8 border-t-2 border-dashed border-white"></div>
                     <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg whitespace-nowrap">
                       Kasol
+                    </span>
+                    <div className="w-4 md:w-8 border-t-2 border-dashed border-white"></div>
+                    <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg whitespace-nowrap">
+                      Manikaran
                     </span>
                     <div className="w-4 md:w-8 border-t-2 border-dashed border-white"></div>
                     <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg whitespace-nowrap">
@@ -174,6 +195,10 @@ export default function HimachalTour() {
                     </span>
                     <div className="w-4 md:w-8 border-t-2 border-dashed border-white"></div>
                     <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg whitespace-nowrap">
+                      Wagah Border
+                    </span>
+                    <div className="w-4 md:w-8 border-t-2 border-dashed border-white"></div>
+                    <span className="text-white font-bold text-sm md:text-lg drop-shadow-lg whitespace-nowrap">
                       Golden Temple
                     </span>
                   </div>
@@ -186,7 +211,7 @@ export default function HimachalTour() {
 
       <div
         className="min-h-screen bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url(background1.jpg)" }}
+        style={{ backgroundImage: "url(/background1.jpg)" }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 min-h-screen flex items-center">
@@ -758,22 +783,50 @@ export default function HimachalTour() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-white text-sm md:text-lg drop-shadow-lg">
                 <div className="space-y-2">
                   <p>
-                    <span className="font-semibold text-amber-300">Manali:</span> 2 Nights - Manali Valley Resort (4
-                    Star)
+                    <span className="font-semibold text-amber-300">Manali:</span> 2 Nights -
+                    <a
+                      href="https://manalivalleyresorts.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-300 hover:text-blue-200 underline transition-colors duration-200 ml-1"
+                    >
+                      Manali Valley Resort (4 Star)
+                    </a>
                   </p>
                   <p>
-                    <span className="font-semibold text-amber-300">Kasol:</span> 1 Night - Parvati Woods / Bricks and
-                    Woods Tent
+                    <span className="font-semibold text-amber-300">Kasol:</span> 1 Night -
+                    <a
+                      href="https://camps.furut.net/camps/parvati-woods-camp-kasol/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-300 hover:text-blue-200 underline transition-colors duration-200 ml-1"
+                    >
+                      Parvati Woods / Bricks and Woods Tent
+                    </a>
                   </p>
                 </div>
                 <div className="space-y-2">
                   <p>
-                    <span className="font-semibold text-amber-300">Dharamshala:</span> 1 Night - Hotel Spring Valley (4
-                    Star)
+                    <span className="font-semibold text-amber-300">Dharamshala:</span> 1 Night -
+                    <a
+                      href="https://www.dlshotels.in/spring-valley-resort-dharamshala/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-300 hover:text-blue-200 underline transition-colors duration-200 ml-1"
+                    >
+                      Hotel Spring Valley (4 Star)
+                    </a>
                   </p>
                   <p>
-                    <span className="font-semibold text-amber-300">Amritsar:</span> 1 Night - Apple Tree/Grand Kabana (4
-                    Star)
+                    <span className="font-semibold text-amber-300">Amritsar:</span> 1 Night -
+                    <a
+                      href="https://leveluphotels.com/hotel-grand-cabbana/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-300 hover:text-blue-200 underline transition-colors duration-200 ml-1"
+                    >
+                      Apple Tree/Grand Kabana (4 Star)
+                    </a>
                   </p>
                 </div>
               </div>
@@ -793,7 +846,7 @@ export default function HimachalTour() {
                 Get ready for an unforgettable journey through the majestic Himalayas
               </p>
               <p className="text-sm md:text-lg text-slate-300 drop-shadow-lg px-4">
-                Premium Himachal Pradesh Tour 2025 • December 9-18, 2025
+                Himachal Pradesh Tour 2025 • December 10-19, 2025
               </p>
             </div>
           </div>
