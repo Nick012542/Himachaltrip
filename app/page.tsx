@@ -1,4 +1,11 @@
-import { Calendar, Star, Mountain, Utensils, Home, Download } from "lucide-react"
+import {
+  Calendar,
+  Star,
+  Mountain,
+  Utensils,
+  Home,
+  Download,
+} from "lucide-react";
 
 export default function HimachalTour() {
   const itinerary = [
@@ -24,7 +31,8 @@ export default function HimachalTour() {
       day: 3,
       date: "11th Dec",
       title: "Arrive Manali: DJ Night Included",
-      description: "Morning relax, scenic views, gentle walk, momos. Evening full DJ Night – music, dance aur dhamaka!",
+      description:
+        "Morning relax, scenic views, gentle walk, momos. Evening full DJ Night – music, dance aur dhamaka!",
       meals: "Dinner only",
       accommodation: "Manali Valley Resort (4 Star)",
     },
@@ -91,7 +99,7 @@ export default function HimachalTour() {
       meals: "Own cost",
       accommodation: "Home Sweet Home",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen">
@@ -110,11 +118,12 @@ export default function HimachalTour() {
         {/* Download Itinerary Button */}
         <a
           href="/himachal-itinerary.pdf"
-          
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl border border-blue-500 text-base md:text-lg backdrop-blur-sm"
         >
           <Download size={18} className="md:w-6 md:h-6" />
-          <span className="font-semibold">Download Itinerary</span>
+          <span className="font-semibold">View Itinerary</span>
         </a>
       </div>
 
@@ -134,13 +143,16 @@ export default function HimachalTour() {
                 "आत्ता नाही तर कधीचं नाही"
               </p>
               <div className="text-base md:text-lg text-slate-200 max-w-2xl mx-auto mb-6 md:mb-8 px-4">
-                Experience the majestic beauty of the Himalayas on this 10-day journey
+                Experience the majestic beauty of the Himalayas on this 10-day
+                journey
               </div>
             </div>
           </div>
 
           <div className="relative max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12">Journey Route</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12">
+              Journey Route
+            </h2>
 
             <div className="relative bg-slate-800/20 backdrop-blur-sm rounded-2xl md:rounded-3xl p-6 md:p-12 border border-white/20">
               <div className="relative h-16 md:h-20 overflow-x-auto">
@@ -236,13 +248,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[0].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[0].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[0].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[0].accommodation}
                         </span>
                       </div>
                     </div>
@@ -293,13 +307,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[1].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[1].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[1].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[1].accommodation}
                         </span>
                       </div>
                     </div>
@@ -338,13 +354,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[2].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[2].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[2].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[2].accommodation}
                         </span>
                       </div>
                     </div>
@@ -395,13 +413,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[3].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[3].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[3].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[3].accommodation}
                         </span>
                       </div>
                     </div>
@@ -440,13 +460,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[4].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[4].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[4].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[4].accommodation}
                         </span>
                       </div>
                     </div>
@@ -497,13 +519,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[5].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[5].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[5].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[5].accommodation}
                         </span>
                       </div>
                     </div>
@@ -542,13 +566,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[6].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[6].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[6].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[6].accommodation}
                         </span>
                       </div>
                     </div>
@@ -599,13 +625,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[7].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[7].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[7].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[7].accommodation}
                         </span>
                       </div>
                     </div>
@@ -644,13 +672,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[8].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[8].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[8].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[8].accommodation}
                         </span>
                       </div>
                     </div>
@@ -701,13 +731,15 @@ export default function HimachalTour() {
                       <div className="flex items-center gap-3">
                         <Utensils className="text-green-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Meals:</span> {itinerary[9].meals}
+                          <span className="font-semibold">Meals:</span>{" "}
+                          {itinerary[9].meals}
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Home className="text-blue-400" size={18} />
                         <span className="text-white text-sm md:text-lg drop-shadow-lg">
-                          <span className="font-semibold">Stay:</span> {itinerary[9].accommodation}
+                          <span className="font-semibold">Stay:</span>{" "}
+                          {itinerary[9].accommodation}
                         </span>
                       </div>
                     </div>
@@ -726,7 +758,9 @@ export default function HimachalTour() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 min-h-screen flex items-center">
           <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-16 w-full">
-            <h2 className="text-2xl md:text-4xl font-bold text-center text-white mb-8 md:mb-16">Tour Information</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-center text-white mb-8 md:mb-16">
+              Tour Information
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               <div>
@@ -744,7 +778,10 @@ export default function HimachalTour() {
                     "Professional Tour Manager",
                     "River rafting (free) & paragliding opportunities",
                   ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3 text-white text-sm md:text-lg drop-shadow-lg">
+                    <li
+                      key={index}
+                      className="flex items-start gap-3 text-white text-sm md:text-lg drop-shadow-lg"
+                    >
                       <div className="w-2 h-2 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
                       <span>{item}</span>
                     </li>
@@ -766,7 +803,10 @@ export default function HimachalTour() {
                     "Early check-in at hotels",
                     "Cost of any other services not specifically mentioned in inclusions",
                   ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3 text-white text-sm md:text-lg drop-shadow-lg">
+                    <li
+                      key={index}
+                      className="flex items-start gap-3 text-white text-sm md:text-lg drop-shadow-lg"
+                    >
                       <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></div>
                       <span>{item}</span>
                     </li>
@@ -783,7 +823,10 @@ export default function HimachalTour() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 text-white text-sm md:text-lg drop-shadow-lg">
                 <div className="space-y-2">
                   <p>
-                    <span className="font-semibold text-amber-300">Manali:</span> 2 Nights -
+                    <span className="font-semibold text-amber-300">
+                      Manali:
+                    </span>{" "}
+                    2 Nights -
                     <a
                       href="https://manalivalleyresorts.com/"
                       target="_blank"
@@ -794,7 +837,8 @@ export default function HimachalTour() {
                     </a>
                   </p>
                   <p>
-                    <span className="font-semibold text-amber-300">Kasol:</span> 1 Night -
+                    <span className="font-semibold text-amber-300">Kasol:</span>{" "}
+                    1 Night -
                     <a
                       href="https://camps.furut.net/camps/parvati-woods-camp-kasol/"
                       target="_blank"
@@ -807,7 +851,10 @@ export default function HimachalTour() {
                 </div>
                 <div className="space-y-2">
                   <p>
-                    <span className="font-semibold text-amber-300">Dharamshala:</span> 1 Night -
+                    <span className="font-semibold text-amber-300">
+                      Dharamshala:
+                    </span>{" "}
+                    1 Night -
                     <a
                       href="https://www.dlshotels.in/spring-valley-resort-dharamshala/"
                       target="_blank"
@@ -818,7 +865,10 @@ export default function HimachalTour() {
                     </a>
                   </p>
                   <p>
-                    <span className="font-semibold text-amber-300">Amritsar:</span> 1 Night -
+                    <span className="font-semibold text-amber-300">
+                      Amritsar:
+                    </span>{" "}
+                    1 Night -
                     <a
                       href="https://leveluphotels.com/hotel-grand-cabbana/"
                       target="_blank"
@@ -833,17 +883,24 @@ export default function HimachalTour() {
             </div>
 
             <div className="mt-8 md:mt-12 text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 drop-shadow-lg">Tour Cost</h3>
-              <p className="text-3xl md:text-5xl font-bold text-amber-400 drop-shadow-lg">₹16,500/-</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 drop-shadow-lg">
+                Tour Cost
+              </h3>
+              <p className="text-3xl md:text-5xl font-bold text-amber-400 drop-shadow-lg">
+                ₹16,500/-
+              </p>
               <p className="text-white/90 mt-2 text-sm md:text-lg drop-shadow-lg">
                 Per Person with 3rd AC Railway Booking
               </p>
             </div>
 
             <div className="mt-12 md:mt-16 text-center">
-              <h3 className="text-2xl md:text-4xl font-bold text-amber-400 mb-4 md:mb-6 drop-shadow-lg">Thank You!</h3>
+              <h3 className="text-2xl md:text-4xl font-bold text-amber-400 mb-4 md:mb-6 drop-shadow-lg">
+                Thank You!
+              </h3>
               <p className="text-base md:text-xl text-white mb-4 drop-shadow-lg px-4">
-                Get ready for an unforgettable journey through the majestic Himalayas
+                Get ready for an unforgettable journey through the majestic
+                Himalayas
               </p>
               <p className="text-sm md:text-lg text-slate-300 drop-shadow-lg px-4">
                 Himachal Pradesh Tour 2025 • December 10-19, 2025
@@ -853,5 +910,5 @@ export default function HimachalTour() {
         </div>
       </div>
     </div>
-  )
+  );
 }
