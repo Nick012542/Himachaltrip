@@ -11,7 +11,7 @@ export default function HimachalTour() {
   const itinerary = [
     {
       day: 1,
-      date: "9th Dec",
+      date: "10th Dec",
       title: "Mumbai to Delhi: Let's Goooo!",
       description:
         "Board the Garib Rath Express from Mumbai and start your North India adventure. Selfies, Antakshari, Uno, Insta Reels. Let the fun begin!",
@@ -20,7 +20,7 @@ export default function HimachalTour() {
     },
     {
       day: 2,
-      date: "10th Dec",
+      date: "11th Dec",
       title: "Delhi to Chandigarh to Manali: Chill Scene",
       description:
         "Reach Delhi → Road trip to Chandigarh. Lunch on own, local shopping, then overnight road trip to Manali",
@@ -29,7 +29,7 @@ export default function HimachalTour() {
     },
     {
       day: 3,
-      date: "11th Dec",
+      date: "12th Dec",
       title: "Arrive Manali: DJ Night Included",
       description:
         "Morning relax, scenic views, gentle walk, momos. Evening full DJ Night – music, dance aur dhamaka!",
@@ -38,7 +38,7 @@ export default function HimachalTour() {
     },
     {
       day: 4,
-      date: "12th Dec",
+      date: "13th Dec",
       title: "Solang Valley & Local Sightseeing",
       description:
         "Snow fun at Solang Valley & Atal Tunnel drive, Hidimba Temple visit, Mall Road shopping. Adventure aur vibe – dono chahiye!",
@@ -47,7 +47,7 @@ export default function HimachalTour() {
     },
     {
       day: 5,
-      date: "13th Dec",
+      date: "14th Dec",
       title: "Kullu to Kasol",
       description:
         "Drive to Kullu for river rafting & paragliding, explore local markets. Later, head to Kasol for a relaxing evening.",
@@ -56,7 +56,7 @@ export default function HimachalTour() {
     },
     {
       day: 6,
-      date: "14th Dec",
+      date: "15th Dec",
       title: "Explore Kasol & Travel to Dharamshala",
       description:
         "Kasol Market & Parvati River, visit Manikaran Sahib Gurudwara with Langar lunch. Evening: DJ Bash! One more DJ night?",
@@ -65,7 +65,7 @@ export default function HimachalTour() {
     },
     {
       day: 7,
-      date: "15th Dec",
+      date: "16th Dec",
       title: "McLeodganj Exploration and Drive to Amritsar",
       description:
         "Explore spiritual McLeodganj, peaceful Dalai Lama Temple, and Shiva Café. Later begin journey to Amritsar (5-8 hrs). Chill playlist, travel snacks, mid-road dance reels.",
@@ -74,7 +74,7 @@ export default function HimachalTour() {
     },
     {
       day: 8,
-      date: "16th Dec",
+      date: "17th Dec",
       title: "Amritsar Ghumo aur Journey to Delhi",
       description:
         "Golden Temple ki roshni mein spiritual connection, Langar ki unlimited love, aur Jallianwala Bagh ki history. Phir patriotic thrill at Wagah Border Ceremony",
@@ -83,7 +83,7 @@ export default function HimachalTour() {
     },
     {
       day: 9,
-      date: "17th Dec",
+      date: "18th Dec",
       title: "Delhi Se Mumbai Ki Journey",
       description:
         "Delhi ki thodi si masti, phir Mumbai ki taraf! Train journey mein dosti, yaadein, aur endless masti...",
@@ -92,7 +92,7 @@ export default function HimachalTour() {
     },
     {
       day: 10,
-      date: "18th Dec",
+      date: "19th Dec",
       title: "Mumbai Wapsi – Trip Khatam",
       description:
         "Mumbai wapas aake, dil bhar ke yaadein, aur next adventure ki planning shuru! Trip officially khatam... par memories forever rahengi.",
