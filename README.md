@@ -1,2 +1,0 @@
-# Himachaltrip
-Trip Website
