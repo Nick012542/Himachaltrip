@@ -117,7 +117,7 @@ export default function HimachalTour() {
 
         {/* Download Itinerary Button */}
         <a
-          href="/himachal-itinerary.pdf"
+          href="/himachal-itinerary_.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl border border-blue-500 text-base md:text-lg backdrop-blur-sm"
