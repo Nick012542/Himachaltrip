@@ -24,7 +24,7 @@ export default function HimachalTour() {
       title: "Delhi to Chandigarh to Manali: Chill Scene",
       description:
         "Reach Delhi → Road trip to Chandigarh. Lunch on own, local shopping, then overnight road trip to Manali",
-      meals: "Breakfast, Lunch, Dinner",
+      meals: "Dinner only",
       accommodation: "Overnight journey to Manali",
     },
     {
@@ -33,7 +33,7 @@ export default function HimachalTour() {
       title: "Arrive Manali: DJ Night Included",
       description:
         "Morning relax, scenic views, gentle walk, momos. Evening full DJ Night – music, dance aur dhamaka!",
-      meals: "Dinner only",
+      meals: "Breakfast, Lunch, Dinner",
       accommodation: "Manali Valley Resort (4 Star)",
     },
     {
@@ -42,7 +42,7 @@ export default function HimachalTour() {
       title: "Solang Valley & Local Sightseeing",
       description:
         "Snow fun at Solang Valley & Atal Tunnel drive, Hidimba Temple visit, Mall Road shopping. Adventure aur vibe – dono chahiye!",
-      meals: "Breakfast, Lunch, Dinner",
+      meals: "Breakfast, Dinner",
       accommodation: "Manali Valley Resort (4 Star)",
     },
     {
@@ -50,7 +50,7 @@ export default function HimachalTour() {
       date: "14th Dec",
       title: "Kullu to Kasol",
       description:
-        "Drive to Kullu for river rafting & paragliding, explore local markets. Later, head to Kasol for a relaxing evening.",
+        "Drive to Kullu for river rafting(free) & paragliding, explore local markets. Later, head to Kasol for a relaxing evening.",
       meals: "Breakfast, Lunch, Dinner",
       accommodation: "Parvati Woods / Bricks and Woods Tent",
     },
@@ -60,7 +60,7 @@ export default function HimachalTour() {
       title: "Explore Kasol & Travel to Dharamshala",
       description:
         "Kasol Market & Parvati River, visit Manikaran Sahib Gurudwara with Langar lunch. Evening: DJ Bash! One more DJ night?",
-      meals: "Breakfast, Dinner Only",
+      meals: "Breakfast,Langar Lunch, Dinner Only",
       accommodation: "Hotel Spring Valley (4 Star)",
     },
     {
