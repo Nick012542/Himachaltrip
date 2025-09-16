@@ -146,12 +146,12 @@ export default function HimachalTour() {
                 Experience the majestic beauty of the Himalayas on this 10-day
                 journey
               </div>
-              <div className="flex items-center justify-center gap-6 text-base md:text-lg text-slate-100 max-w-full mx-auto mb-6 md:mb-8 px-4 whitespace-nowrap">
+              <div className="flex flex-wrap items-center justify-center gap-3 text-sm md:text-lg text-slate-100 max-w-full mx-auto mb-6 md:mb-8 px-4 text-center">
                 <span>Nikhil Patil : 8657945328</span>
                 <span>|</span>
                 <span>Om Shinde : 9137001021</span>
                 <span>|</span>
-                <span>Waman Patil: 7304384956</span>
+                <span>Waman Patil : 7304384956</span>
               </div>
             </div>
           </div>
@@ -227,9 +227,9 @@ export default function HimachalTour() {
           </div>
           <div className="relative max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16">
             <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12">
-              Scroll For More Information 
+              Scroll For More Information
             </h2>
-            </div>
+          </div>
         </div>
       </div>
 
