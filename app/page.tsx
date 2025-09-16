@@ -117,7 +117,7 @@ export default function HimachalTour() {
 
         {/* Download Itinerary Button */}
         <a
-          href="/himachal-itinerary_.pdf"
+          href="/himachal-itinerary.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl border border-blue-500 text-base md:text-lg backdrop-blur-sm"
@@ -145,6 +145,13 @@ export default function HimachalTour() {
               <div className="text-base md:text-lg text-slate-200 max-w-2xl mx-auto mb-6 md:mb-8 px-4">
                 Experience the majestic beauty of the Himalayas on this 10-day
                 journey
+              </div>
+              <div className="flex items-center justify-center gap-6 text-base md:text-lg text-slate-100 max-w-full mx-auto mb-6 md:mb-8 px-4 whitespace-nowrap">
+                <span>Nikhil Patil : 8657945328</span>
+                <span>|</span>
+                <span>Om Shinde : 9137001021</span>
+                <span>|</span>
+                <span>Waman Patil: 7304384956</span>
               </div>
             </div>
           </div>
@@ -218,6 +225,11 @@ export default function HimachalTour() {
               </div>
             </div>
           </div>
+          <div className="relative max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12">
+              Scroll For More Information 
+            </h2>
+            </div>
         </div>
       </div>
 
